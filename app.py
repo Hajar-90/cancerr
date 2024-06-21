@@ -14,7 +14,7 @@ scaler = joblib.load('scaler.pkl')
 # Load CNN model with detailed error handling
 model_loaded = False
 try:
-    cnn_model = tf.keras.models.load_model('oneclass.keras')
+    cnn_model = tf.keras.models.load_model('oneclasss.keras')
     model_loaded = True
 except FileNotFoundError:
     st.error("CNN model file 'model.keras' not found. Please upload the model file.")
